@@ -1,0 +1,53 @@
+# HTML5游戏开发团队 - API配置示例
+# 请根据您的API服务修改以下配置
+
+LLM_GPT:
+  # OpenAI配置示例
+  openai_llm:
+    api_key: "sk-your-openai-api-key-here"
+    api_base: "https://api.openai.com/v1"
+    api_type: "openai"
+    timeout: 120
+    default_model:
+      model_name: "gpt-3.5-turbo"
+      temperature: 0.01
+      max_tokens: 4096
+
+  # 阿里云通义千问配置示例
+  qwen_llm:
+    api_key: "your-qwen-api-key-here"
+    api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    api_type: "openai"
+    timeout: 120
+    default_model:
+      model_name: "qwen-turbo"
+      temperature: 0.01
+      max_tokens: 4096
+
+  # DeepSeek配置示例
+  deepseek_llm:
+    api_key: "your-deepseek-api-key-here"
+    api_base: "https://api.deepseek.com/v1"
+    api_type: "openai"
+    timeout: 120
+    default_model:
+      model_name: "deepseek-chat"
+      temperature: 0.01
+      max_tokens: 4096
+
+  # 默认配置（使用第一个可用的LLM）
+  default_llm:
+    api_key: "your-api-key-here"
+    api_base: "https://api.openai.com/v1"
+    api_type: "openai"
+    timeout: 120
+    default_model:
+      model_name: "gpt-3.5-turbo"
+      temperature: 0.01
+      max_tokens: 4096
+
+# 重要说明：
+# 1. api_base 字段会被自动转换为 base_url
+# 2. 阿里云通义千问使用兼容模式API
+# 3. 确保API密钥格式正确
+# 4. 检查网络连接和防火墙设置 
