@@ -1,0 +1,16 @@
+{
+  "project_name": "demo_20250705_141813",
+  "description": "生成一个简单的纯前端JS实现的贪吃蛇游戏，不需要任何的依赖与后端组件",
+  "created_at": "2025-07-05T14:18:13.783426",
+  "files_generated": [
+    "product_spec.md",
+    "README.md",
+    "run_instructions.md",
+    "frontend/index.html",
+    "frontend/script.js",
+    "frontend/style.css",
+    "tests/test_app.py",
+    "backend/app.py",
+    "deployment/deploy.md"
+  ]
+}

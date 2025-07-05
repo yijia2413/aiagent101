@@ -1,0 +1,14 @@
+{
+  "project_name": "demo_20250705_134134",
+  "description": "生成一个纯后端简单的五子棋，不依赖任何环境，用python3.8就能直接执行，也不需要前端和后端数据库等组件，主要是简单",
+  "created_at": "2025-07-05T13:41:34.990597",
+  "files_generated": [
+    "README.md",
+    "product_spec.md",
+    "frontend/index.html",
+    "backend/app.py",
+    "tests/test_app.py",
+    "deployment/deploy.md",
+    "run_instructions.md"
+  ]
+}

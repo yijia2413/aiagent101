@@ -1,0 +1,34 @@
+# AI多Agent产品Demo生成器依赖包
+
+# 核心框架
+pyautogen>=0.2.0
+openai>=1.0.0
+gradio>=4.0.0
+python-dotenv>=1.0.0
+
+# 备用autogen包（如果上面的不行，可以尝试这个）
+# autogen-agentchat>=0.2.0
+
+# Web和API相关
+requests>=2.31.0
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# 数据处理
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 文件处理
+zipfile36>=0.1.3
+
+# 日期时间处理
+python-dateutil>=2.8.0
+
+# 临时文件处理（Python内置，但列出来做参考）
+# tempfile - 内置模块
+
+# 系统和环境
+psutil>=5.9.0
+
+# 可选：如果需要更好的错误处理
+tenacity>=8.2.0 

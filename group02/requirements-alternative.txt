@@ -1,0 +1,22 @@
+# 备用依赖文件 - 如果主要的requirements.txt不工作，请使用这个
+
+# 核心框架（备用包名）
+autogen-agentchat>=0.2.0
+openai>=1.0.0
+gradio>=4.0.0
+python-dotenv>=1.0.0
+
+# Web和API相关
+requests>=2.31.0
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# 数据处理
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 系统和环境
+psutil>=5.9.0
+
+# 错误处理
+tenacity>=8.2.0 
