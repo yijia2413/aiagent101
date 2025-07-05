@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .demo-content {
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 产品Demo</h1>
+        <div class="demo-content">
+            <p>欢迎使用AI生成的产品demo！</p>
+            <button onclick="handleDemo()">开始体验</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    
+    <script>
+        function handleDemo() {
+            const result = document.getElementById('result');
+            result.innerHTML = '<p>✅ Demo功能正常运行！</p>';
+            
+            // 这里可以添加与后端的交互逻辑
+            fetch('/api/demo')
+                .then(response => response.json())
+                .then(data => {
+                    result.innerHTML += '<p>后端响应：' + JSON.stringify(data) + '</p>';
+                })
+                .catch(error => {
+                    result.innerHTML += '<p>⚠️ 后端连接失败，请检查后端服务</p>';
+                });
+        }
+    </script>
+</body>
+</html>
